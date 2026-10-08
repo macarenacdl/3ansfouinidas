@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Joyeux anniversaire 🧡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floaty" aria-hidden="true">
+    <span style="left:8%;animation-delay:0s">🧡</span>
+    <span style="left:28%;animation-delay:3s">🍊</span>
+    <span style="left:52%;animation-delay:6s">✨</span>
+    <span style="left:74%;animation-delay:1.5s">🧡</span>
+    <span style="left:90%;animation-delay:4.5s">🍬</span>
+  </div>
+
+  <!-- ÉCRAN 1 : intro + bonbon -->
+  <section id="screen-intro" class="screen active">
+    <div class="card">
+      <div class="big-emoji">🎉🧡</div>
+      <h1>Joyeux 3 ans, mon amour !</h1>
+      <p id="intro-hint">Trois ans déjà… Mais avant ta surprise, il faut que tu attrapes le bonbon&nbsp;! 🍬</p>
+    </div>
+    <button id="candy" class="candy" aria-label="Attrape le bonbon">🍬</button>
+  </section>
+
+  <!-- ÉCRAN 2 : quiz -->
+  <section id="screen-quiz" class="screen">
+    <div class="card">
+      <div class="progress" id="quiz-progress"></div>
+      <h2 id="quiz-question"></h2>
+      <div id="quiz-answers" class="answers"></div>
+      <p id="quiz-feedback" class="feedback" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ÉCRAN 3 : memo -->
+  <section id="screen-memo" class="screen">
+    <div class="card wide">
+      <h2>Dernière épreuve : le mémo 🧠</h2>
+      <p>Retrouve les <strong>deux montres</strong> ⌚ pour débloquer ton cadeau&nbsp;!</p>
+      <div id="memo-grid" class="memo-grid"></div>
+      <p id="memo-feedback" class="feedback" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ÉCRAN 4 : cadeau -->
+  <section id="screen-gift" class="screen">
+    <div class="card">
+      <div class="big-emoji">🎁✨</div>
+      <h2>Bravo, tu as gagné ! 🥳</h2>
+      <p>Voici ton cadeau, mon amour&nbsp;:</p>
+      <div class="ticket">
+        <div class="ticket-top">
+          <span class="ticket-emoji">⌚</span>
+          <div>
+            <div class="ticket-label">BILLET D'ENTRÉE</div>
+            <div class="ticket-title">IWC Museum</div>
+            <div class="ticket-sub">Schaffhouse 🇨🇭</div>
+          </div>
+        </div>
+        <div class="ticket-sep"></div>
+        <div class="ticket-bottom">
+          <span id="ticket-note">Une journée rien que pour nous 🧡</span>
+        </div>
+      </div>
+      <p class="love">Je t'aime ! Joyeux anniversaire à nous 🥂</p>
+    </div>
+  </section>
+
+  <div id="confetti" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
